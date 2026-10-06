@@ -2,7 +2,7 @@ name: Daily Telegram Message
 
 on:
   schedule:
-    - cron: "37 16 * * *"
+    - cron: "39 16 * * *"
 
   # Allows you to manually test it
   workflow_dispatch:
