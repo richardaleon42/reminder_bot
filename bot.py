@@ -1,10 +1,15 @@
 import os
 import requests
+from datetime import datetime
 
 BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 message = "Good morning everyone! ☀️"
+
+system_time = datetime.now()
+
+print("System time:", system_time.strftime("%Y-%m-%d %H:%M:%S %Z"))
 
 url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
